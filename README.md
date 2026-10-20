@@ -1,8 +1,9 @@
 # Bolim Bluray Player
 
-<<<<<<< HEAD
 Reproductor de discos Blu-ray con sus menús (HDMV y Java), menú propio de respaldo,
 reanudar, otros títulos, nombres de pistas y avisos claros cuando falta algo.
+Escrito en Python con [libbluray](https://www.videolan.org/developers/libbluray.html), [mpv](https://mpv.io) y Qt Quick.
+
 
 ## Abrirlo
 Desde el menú de aplicaciones (Multimedia → Bolim Bluray Player) o con `bolim`.
