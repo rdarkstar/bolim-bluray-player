@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Bolim Bluray Player
+GenericName=Reproductor de Blu-ray
+Comment=Reproduce discos Blu-ray con sus menús
+Exec=bolim %f
+Icon=org.xfce.parole
+Terminal=false
+Categories=AudioVideo;Video;Player;
+Keywords=bluray;blu-ray;bd;video;disco;película;
+MimeType=x-content/video-bluray;
+StartupWMClass=bolim

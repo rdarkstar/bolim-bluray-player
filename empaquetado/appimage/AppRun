@@ -1,0 +1,11 @@
+#!/bin/sh
+# Bolim Bluray Player (AppImage)
+HERE="$(dirname "$(readlink -f "$0")")"
+export LD_LIBRARY_PATH="$HERE/usr/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export BOLIM_APPDIR="$HERE"
+export RESOURCE_NAME=bolim
+export PYTHONNOUSERSITE=1
+if [ -z "$LIBBLURAY_CP" ]; then
+    for j in "$HERE"/usr/share/java/libbluray-j2se*.jar; do [ -f "$j" ] && export LIBBLURAY_CP="$j"; done
+fi
+exec "$HERE/usr/python3/bin/python3" -s "$HERE/usr/share/bolim/arranque.py" "$@"

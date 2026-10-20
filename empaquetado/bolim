@@ -1,0 +1,5 @@
+#!/bin/sh
+# Bolim Bluray Player
+export PYTHONPATH="/opt/bolim/lib:/opt/bolim${PYTHONPATH:+:$PYTHONPATH}"
+export RESOURCE_NAME=bolim
+exec /usr/bin/python3 -m bolim "$@"
