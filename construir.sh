@@ -26,6 +26,7 @@ find "$R" -name __pycache__ -prune -exec rm -rf {} +
 install -m 755 "$FUENTE/empaquetado/bolim" "$R/usr/bin/bolim"
 install -m 644 "$FUENTE/empaquetado/bolim.desktop" "$R/usr/share/applications/"
 install -m 644 "$FUENTE/README.md" "$R/usr/share/doc/bolim/"
+install -m 644 "$FUENTE/LICENSE" "$R/usr/share/doc/bolim/copyright"
 install -m 755 "$FUENTE/empaquetado/DEBIAN/postinst" "$FUENTE/empaquetado/DEBIAN/prerm" "$R/DEBIAN/"
 sed "s/^Version: .*/Version: $VERSION/" "$FUENTE/empaquetado/DEBIAN/control" > "$R/DEBIAN/control"
 echo "Installed-Size: $(du -sk --exclude=DEBIAN "$R" | cut -f1)" >> "$R/DEBIAN/control"

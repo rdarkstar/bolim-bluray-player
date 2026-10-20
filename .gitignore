@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.deb
+*.AppImage
+# Nunca subir claves de discos
+KEYDB.cfg
+config/aacs/
